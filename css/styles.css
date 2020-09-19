@@ -2,11 +2,25 @@ body{
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url("https://images.unsplash.com/photo-1541345023926-55d6e0853f4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    
    
 }
-nav{
+#nav{
     text-align: right;
     padding: 15px;
+    background-color: yellowgreen;
+}
+#nav a{
+    color:white;
+  padding: 10px 20px;
+   display:inline-block;
+  text-decoration: none;
+  font-size: 20px;
+}
+#home{
+    width: 100%;
+    height: 100%;
+    color: wheat;
 }
 img{
     width: 100px;
@@ -20,4 +34,10 @@ img{
 float: right;
 width: 350px;
 height: 200px;
+}
+footer{
+    background-color: white;
+    color:black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
