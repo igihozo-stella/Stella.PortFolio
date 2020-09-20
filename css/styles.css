@@ -141,8 +141,18 @@ oject-container h2 {font-size:15px;}
     border-radius: 7px;
 
 }
- 
-@media screen and (min-width: 480px) {
-    body{
-        margin: auto;
+@media screen and (max-width: 650px) {
+    .container{width:98%; margin:auto;}
+    .profile{
+        width:100%;
+        float:none;
+        
+        padding:0 20px;
     }
+    .projects{
+        width:100%;
+        float:none;
+        
+        padding:0 20px;
+    }
+}
