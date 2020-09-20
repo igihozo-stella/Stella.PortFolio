@@ -1,64 +1,147 @@
-body{
-    margin: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("https://images.unsplash.com/photo-1541345023926-55d6e0853f4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-    background-size: cover;
-    font-size: small;
+*{margin:0; padding:0;}
+*{box-sizing: border-box;}
+@font-face{
+    src:url(../fonts/CoreSansG-Regular.ttf);
+    font-family: core;
 }
-#nav{
-    text-align: right;
-    padding: 15px;
-    background-color: yellowgreen;
+body{background:#f8f8f8;}
+img{width:100%; height:auto;}
+.container{width:80%; margin:auto;}
+.row::after {content: ""; clear: both; display: table; }  
+nav{background:rgb(35, 39, 44); box-shadow: 0 0 30px rgba(61, 61, 61, 0.25);}
+#heading{float:left; padding: 6px 5px; font-family: core;}
+#heading h1{color:white;}
+.menu{float:right; padding: 10px 5px;}
+#heading h1, .menu a{text-transform:uppercase;}
+.menu a{text-decoration: none; padding:0 15px; color:white; font-size:15px; font-family: core}
+#content{
+    padding:30px 0;
 }
-#nav a{
-    color:white;
-  padding: 10px 20px;
-   display:inline-block;
-  text-decoration: none;
-  font-size: 15px;
+.profile{
+    width:30%;
+    float:left;
+    
+    padding:0 20px;
 }
-#nav a:hover{
+.projects{
+    width:68%;
+    float:left;
+    
+    padding:0 20px;
+}
+.card{
+    font-family: 'Roboto', sans-serif;
+    background:white;
+    padding: 30px;
+    text-align:center;
+    box-shadow: 0 0 30px rgba(61, 61, 61, 0.25);
+    border-radius: 9px;
+}
+.card:hover, .about:hover, .list:hover, .project-container:hover{
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.25);
+}
+.card img{
+ border-radius:50%;
+ 
+ box-shadow: 0 0 30px rgba(61, 61, 61, 0.25);
+
+}
+p.name{
+    font-size:25px;
+    margin-top: 10px;
+}
+p.title{
+    font-size:12px;
+}
+hr.line{
+    margin:15px 0;
+    
+}
+
+.card a {
+    text-decoration:none;
+    padding:0 25px;
+}
+.card i {
+    color:rgb(3, 114, 158);
+    font-size:20px;
+}
+
+
+footer {
+    
+    background:rgb(0, 0, 0);
     color: white;
-    font-weight: bold;
-    background-color:yellowgreen;
-}
-#home{
-    width: 97%;margin-left: 1.3%;padding-bottom: 20px;background-color: white;margin-top: 300px;margin-bottom: 10px;height: 200px;"
-}
-#hobbies ul{
-    list-style-type: circle;
-    padding: 5px;
-}
-#hobbies img{
-    width: 100px;
-    height: 50px;
-}
-#skills a{
-float: right;
-width: 350px;
-height: 200px;
-}
-#skills {
-    width: 50%;height: inherit;background-color: grey;padding: 10px;color: white;float: left;
-}
-#profile img{
-    height:220px;width: 200px;margin-left: 10px; float:right;
-}
-.same{
-    padding: 6px;
-  margin: 20px;
-  background-color: white;
-  color: black;
-}
-footer{
-    background-color: white;
-    color:black;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    padding: 8px 0;
+    font-family: core;
+  }
+  footer p{font-size:15px;}
+
+  .project-title{
+      background:rgb(3, 114, 158);
+      padding: 5px 10px;
+      color:white;
+      margin-top: 5px;
+      font-family: core;
+      font-size:10px;
+  }
+  .project-title:hover {
+      background:black;
+      transition:all 0.5s ease-in;
+  }
+  .project-container{
+      background:white;
+      padding: 20px;
+      margin: 5px 0 10px 0;
+      box-shadow: 0 0 30px rgba(61, 61, 61, 0.25);
+      font-family: core;
+      border-radius: 7px;
+  }
+.project-container p, .about p, .list{color:rgb(71, 71, 71);}
+.project-container h2, .project-container p, .project-container a{
+    margin-bottom: 7px;
 }
-footer p{
-    font-size: 17px;
+.project-container p, .project-container a{
+    font-size:14px;
 }
+oject-container h2 {font-size:15px;}
+.about {
+    padding:20px;
+    text-align:justify;
+    
+    font-family: core;
+    background:white;
+    border-radius:7px;
+    box-shadow: 0 0 30px rgba(61, 61, 61, 0.25);
+}
+
+.project-title {
+    margin-bottom: 7px;
+}
+.project-container hr {
+    margin: 10px 0; 
+}
+.project-container a{
+    text-decoration:none;
+    border:2px solid black;
+    padding: 3px 10px;
+    
+    color:black;
+}
+.about p {
+    font-size:14px;
+}
+.list{
+    padding:20px 40px;
+    font-family: core;
+    font-size:14px;
+    background:white;
+    box-shadow: 0 0 30px rgba(61, 61, 61, 0.25);
+    border-radius: 7px;
+
+}
+ 
 @media screen and (min-width: 480px) {
     body{
         margin: auto;
