@@ -1,6 +1,8 @@
 ###PORTFOLIO
 This is a webpage that displays all about me, projects i have worked on as a student in programming.
-###Installation
+###Installation & Setup
+UBUNTU
+Visual studio code
 HTML &CSS
 ###Usage
 ####Development
@@ -11,8 +13,14 @@ Want to contribute? to enhance a existing module follow these steps:
 *add all the changes
 *commit all the changes
 *push to the branch
+###Technologies Used
+html css linux 
+###Support and contact details
+For more details contact me on:
+email:igihozo96@gmail.com
 ###License
-&copy;2020 All rights reserved | Made by Stella
+MIT
+Copyright (c) 2020, portfolio
 
 
 
